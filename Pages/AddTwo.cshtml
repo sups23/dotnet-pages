@@ -1,0 +1,14 @@
+﻿@page
+@using RazorPagesAddTwo.Pages
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model AddTwoModel
+
+<form method="post">
+    <input type="number" name="A" value="@Model.A">
+    <input type="number" name="B" value="@Model.B">
+
+    <input type="submit" value="Add" />
+    <div>@Model.TotalMessage</div>
+</form>

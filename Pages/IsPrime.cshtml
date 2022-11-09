@@ -1,0 +1,13 @@
+﻿@page
+@model RazorPagesIsPrime.Pages.IsPrimeModel
+@{
+}
+
+<h3>Primality checker</h3>
+<form method="post">
+    <input type="number" name="num" value="@Model.Num">
+
+    <input type="submit" value="Check" />
+    <div>@Model.TotalMessage</div>
+</form>
+
